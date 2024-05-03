@@ -1,0 +1,18 @@
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../../assets/img/Rectangle5.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 390px;
+  h1 {
+    background-color: transparent;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 200;
+  }
+}

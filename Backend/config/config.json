@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "DKhenrik12",
+    "database": "sunshine",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "DKhenrik12",
+    "database": "sunshine",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "DKhenrik12",
+    "database": "sunshine",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
