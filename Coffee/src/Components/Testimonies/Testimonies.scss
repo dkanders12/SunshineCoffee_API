@@ -1,0 +1,44 @@
+#Testimonies {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+
+  h2 {
+    background-color: transparent;
+    font-size: 70px;
+    color: black;
+    font-weight: 400;
+    margin-top: 30px;
+  }
+  div {
+    display: flex;
+    gap: 40px;
+    background-color: transparent;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  #TestimoniesCard {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    margin-bottom: 60px;
+    h3 {
+      color: black;
+      background-color: transparent;
+      font-size: 30px;
+      font-weight: 300;
+    }
+    p {
+      background-color: transparent;
+      color: black;
+      font-family: none;
+      margin-top: 20px;
+    }
+  }
+}
