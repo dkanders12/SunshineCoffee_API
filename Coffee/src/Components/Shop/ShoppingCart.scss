@@ -1,0 +1,22 @@
+#slideBar {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 30px;
+  background-color: white;
+  height: 100%;
+  width: 25%;
+
+  #topLeft {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: white;
+
+    .Close {
+      font-size: 30px;
+      background-color: white;
+      color: #000;
+    }
+  }
+}

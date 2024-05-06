@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Fetch.scss";
-import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
 
-function ProductList() {
+import { NavLink } from "react-router-dom";
+import { handleAddToCart } from "../Handle/Handle";
+
+function ProductList({ addToCart }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -31,12 +32,14 @@ function ProductList() {
             <h2>{product.name}</h2>
             <div id="center">
               <img src={product.image} alt="" />
-
               <p>Description: {product.description}</p>
             </div>
             <div id="fix2">
-              <p>Price: ${product.price}</p>
-              <NavLink>Add to Cart</NavLink>
+              <p>Price: {product.price}Dk</p>
+
+              <button className="add" onClick={() => handleAddToCart(product)}>
+                Add to Cart
+              </button>
             </div>
           </article>
         ))}

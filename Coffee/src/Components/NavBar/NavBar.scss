@@ -3,6 +3,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  color: white;
   #logo {
     top: 1px;
     position: absolute;
@@ -33,9 +34,11 @@ nav {
       border-radius: 3px;
       padding: 3px 15px;
       font-family: none;
+      color: white;
     }
     .i-tag {
       font-size: 50px;
+      color: white;
     }
   }
 }
