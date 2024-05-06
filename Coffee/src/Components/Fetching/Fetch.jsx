@@ -1,6 +1,7 @@
 import React from "react";
-
+import "./Fetch.scss";
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 function ProductList() {
   const [products, setProducts] = useState([]);
@@ -22,16 +23,24 @@ function ProductList() {
   }, []);
 
   return (
-    <section>
-      {products.map((product) => (
-        <article key={product.id}>
-          <h2>{product.name}</h2>
-          <p>Price: ${product.price}</p>
-          <img src={product.image} alt="" />
-          <p>Description: {product.description}</p>
-          {/* Add more attributes as needed */}
-        </article>
-      ))}
+    <section id="ProductList">
+      <h2>Our picks for you</h2>
+      <div>
+        {products.map((product) => (
+          <article key={product.id}>
+            <h2>{product.name}</h2>
+            <div id="center">
+              <img src={product.image} alt="" />
+
+              <p>Description: {product.description}</p>
+            </div>
+            <div id="fix2">
+              <p>Price: ${product.price}</p>
+              <NavLink>Add to Cart</NavLink>
+            </div>
+          </article>
+        ))}
+      </div>
     </section>
   );
 }
