@@ -22,7 +22,6 @@ const SignUp = () => {
         throw new Error("Could not sign up. Please try again.");
       }
 
-      // If sign-up is successful, redirect to the login page
       window.location.href = "/login";
     } catch (error) {
       setError(error.message);
