@@ -23,7 +23,6 @@ const Login = () => {
         throw new Error("Invalid email or password");
       }
 
-      // If login is successful, redirect to the Home page
       window.location.href = "/";
     } catch (error) {
       setError(error.message);
