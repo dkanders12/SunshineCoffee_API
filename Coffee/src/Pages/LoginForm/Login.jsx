@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Testimonies from "../../Components/Testimonies/Testimonies";
+import { NavLink } from "react-router-dom";
 import "./Login.scss";
 
 const Login = () => {
@@ -49,6 +50,9 @@ const Login = () => {
             />
             {error && <p className="error">{error}</p>}
             <div>
+              <NavLink id="Sign" to="/SignUp">
+                Signup
+              </NavLink>
               <button type="submit">Submit</button>
             </div>
           </form>
